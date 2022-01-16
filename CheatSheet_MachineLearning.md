@@ -26,3 +26,11 @@ model.fit(X,y)
 y_pred = model.predict(X)
 acc = accuracy_score(y,y_pred)
 ```
+
+## Sklearn
+
+##### train_test_split
+```
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(features, outcomes, test_size=0.2, random_state=42)
+```
