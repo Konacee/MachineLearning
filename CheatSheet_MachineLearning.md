@@ -1,14 +1,28 @@
-#Hello World
-##Title
+# Cheat  Sheet Machine Learning
+## Regression
+
+
+ 
+ ## Classification
+ 
+ 
+ ## Decisiontree
+ - DecisionTreeClassifier()
+    - max_depth
+    - min_leaf_size
+    - min_leaf_split
+ - accuracy_score(y,y_pred)
+ 
+###### Code Example
 
 ```
-code = 5
-def function():
-  return
-  
- function()
- 
- ```
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.metrics import accuracy_score
 
- 
- some text
+model = DecisionTreeClassifier(max_depth=7)
+model.fit(X,y)
+
+
+y_pred = model.predict(X)
+acc = accuracy_score(y,y_pred)
+```
