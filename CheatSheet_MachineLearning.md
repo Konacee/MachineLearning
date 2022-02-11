@@ -98,10 +98,17 @@ SVC()
    - degree: If the kernel is polynomial, this is the maximum degree of the monomials in the kernel.
    - gamma : If the kernel is rbf, this is the gamma parameter.
 
-## AdaBoost
+## Ensembles
 AdaBoostClassifier()
+BaggingClassifier()
    - Base_Estimator(model(' ')): The model utilized for the weak learners
    - n_estimators: The maximum number of weak learners used
+
+RandomForestClassifier()
+   - n_estimators
+   - criterion: gini (gini-impurity) or entropy (imformation gain)
+   - max_depth, min_samples, etc.
+
 
 ## Sklearn general
 
