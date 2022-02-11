@@ -101,7 +101,7 @@ SVC()
 ## Ensembles
 AdaBoostClassifier()
 BaggingClassifier()
-   - Base_Estimator(model(' ')): The model utilized for the weak learners
+   - Base_Estimator(model(' ')): The model utilized for the weak learners (If None, then the base estimator is DecisionTreeClassifier initialized with max_depth=1)
    - n_estimators: The maximum number of weak learners used
 
 RandomForestClassifier()
