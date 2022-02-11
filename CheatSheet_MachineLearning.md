@@ -19,18 +19,18 @@
  
  
  ## Decisiontree
- - DecisionTreeClassifier()
+ DecisionTreeClassifier()
     - max_depth
     - min_leaf_size
     - min_leaf_split
- - accuracy_score(y,y_pred)
+ 
  
  
 ###### Code Example
 
 ```
 from sklearn.tree import DecisionTreeClassifier
-from sklearn.metrics import accuracy_score
+
 
 model = DecisionTreeClassifier(max_depth=7)
 model.fit(X,y)
@@ -64,11 +64,28 @@ print('Best Score: %s' % result_new.best_score_)
 print('Best Hyperparameters: %s' % result_new.best_params_)
 ```
 
+## Support Vector Machine (SVC)
+SVC()
+   - C: The C parameter. higher C = less errors & small margin
+   - kernel: The kernel. The most common ones are 'linear', 'poly', and 'rbf'.
+   - degree: If the kernel is polynomial, this is the maximum degree of the monomials in the kernel.
+   - gamma : If the kernel is rbf, this is the gamma parameter.
 
-## Sklearn
+## AdaBoost
+AdaBoostClassifier()
+   - Base_Estimator(model('')): The model utilized for the weak learners
+   - n_estimators: The maximum number of weak learners used
+
+## Sklearn general
 
 ##### train_test_split
 ```
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(features, outcomes, test_size=0.2, random_state=42)
+```
+##### accuracy score
+accuracy_score(y_true, y_pred)
+```
+from sklearn.metrics import accuracy_score
+sklearn.metrics.accuracy_score(y_true, y_pred)
 ```
