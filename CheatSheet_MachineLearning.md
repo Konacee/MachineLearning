@@ -20,9 +20,9 @@
  
  ## Decisiontree
  DecisionTreeClassifier()
-    - max_depth
-    - min_leaf_size
-    - min_leaf_split
+   - max_depth
+   - min_leaf_size
+   - min_leaf_split
  
  
  
@@ -84,7 +84,7 @@ from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(features, outcomes, test_size=0.2, random_state=42)
 ```
 ##### accuracy score
-accuracy_score(y_true, y_pred)
+
 ```
 from sklearn.metrics import accuracy_score
 sklearn.metrics.accuracy_score(y_true, y_pred)
