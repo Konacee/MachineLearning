@@ -1,11 +1,11 @@
 # Cheat  Sheet Machine Learning
 ## DataFrames
 - preprocessing
-   - df.drop([''], axis=1)
+   - df.drop([' '], axis=1)
    - pd.get_dummies(df) #one-hot encodes the data, so it's all 1's and 0's
    - df.fillna(0.0) #fill the blanks
 - read
-   - pd.read_csv('')
+   - pd.read_csv(' ')
    - pd. smt with table
 - access
    - df[str/int]
@@ -39,7 +39,34 @@ model.fit(X,y)
 y_pred = model.predict(X)
 acc = accuracy_score(y,y_pred)
 ```
-### GridSearchCV
+## Naive Bayes
+CountVectorizer()
+   - .fit_transform(X_train)
+   - .transform(x_test)
+   
+   -> use these for generating the training and testing data before fitting the model
+
+MultinomialNB()
+###### Code Example
+```
+# Instantiate the CountVectorizer method
+count_vector = CountVectorizer()
+
+# Fit the training data and then return the matrix
+training_data = count_vector.fit_transform(X_train)
+
+# Transform testing data and return the matrix. Note we are not fitting the testing data into the CountVectorizer()
+testing_data = count_vector.transform(X_test)
+
+# Instantiate our model
+naive_bayes = MultinomialNB()
+
+# Fit our model to the training data
+naive_bayes.fit(training_data, y_train)
+```
+
+## Gridsearch
+GridSearchCV
 ###### Code Example
 ```
 from sklearn.model_selection import GridSearchCV
@@ -73,7 +100,7 @@ SVC()
 
 ## AdaBoost
 AdaBoostClassifier()
-   - Base_Estimator(model('')): The model utilized for the weak learners
+   - Base_Estimator(model(' ')): The model utilized for the weak learners
    - n_estimators: The maximum number of weak learners used
 
 ## Sklearn general
