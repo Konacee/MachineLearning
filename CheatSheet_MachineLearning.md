@@ -1,4 +1,16 @@
 # Cheat  Sheet Machine Learning
+## DataFrames
+- preprocessing
+   - df.drop([''], axis=1)
+   - pd.get_dummies(df) #one-hot encodes the data, so it's all 1's and 0's
+   - df.fillna(0.0) #fill the blanks
+- read
+   - pd.read_csv('')
+   - pd. smt with table
+- access
+   - df[str/int]
+   - df.loc['str']
+   - df.iloc[[int/intrange], [int/intrange]]
 ## Regression
 
 
@@ -13,6 +25,7 @@
     - min_leaf_split
  - accuracy_score(y,y_pred)
  
+ 
 ###### Code Example
 
 ```
@@ -26,6 +39,31 @@ model.fit(X,y)
 y_pred = model.predict(X)
 acc = accuracy_score(y,y_pred)
 ```
+### GridSearchCV
+###### Code Example
+```
+from sklearn.model_selection import GridSearchCV
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.model_selection import RepeatedStratifiedKFold
+
+
+model_new = DecisionTreeClassifier()
+
+cv = RepeatedStratifiedKFold(n_splits=10, n_repeats=3, random_state=0)
+
+space = dict()
+space['max_depth'] = [7, 8, 9, 10]
+space['min_samples_leaf'] = [4, 5, 6, 7, 8]
+space['min_samples_split'] = [12, 13, 14, 15, 16, 17]
+
+search = GridSearchCV(model_new, space, scoring='accuracy', n_jobs=-1, cv=cv)
+
+result_new = search.fit(X_train, y_train)
+
+print('Best Score: %s' % result_new.best_score_)
+print('Best Hyperparameters: %s' % result_new.best_params_)
+```
+
 
 ## Sklearn
 
