@@ -4,6 +4,7 @@
    - df.drop([' '], axis=1)
    - pd.get_dummies(df) #one-hot encodes the data, so it's all 1's and 0's
    - df.fillna(0.0) #fill the blanks
+   - df['label'] = df.label.map({'ham':0, 'spam':1}) #encode names
 - read
    - pd.read_csv(' ')
    - pd. smt with table
@@ -123,3 +124,4 @@ X_train, X_test, y_train, y_test = train_test_split(features, outcomes, test_siz
 from sklearn.metrics import accuracy_score
 sklearn.metrics.accuracy_score(y_true, y_pred)
 ```
+recall, precission, etc.
