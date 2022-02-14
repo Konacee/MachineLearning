@@ -85,7 +85,7 @@ space['max_depth'] = [7, 8, 9, 10]
 space['min_samples_leaf'] = [4, 5, 6, 7, 8]
 space['min_samples_split'] = [12, 13, 14, 15, 16, 17]
 
-search = GridSearchCV(model_new, space, scoring='accuracy', n_jobs=-1, cv=cv)
+search = GridSearchCV(model_new, space, scoring='accuracy', n_jobs=-1, cv=cv)   # für scoring kann auch "scorer = make_scorer(f1_score)" verwendet werden
 
 result_new = search.fit(X_train, y_train)
 
