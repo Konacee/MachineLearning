@@ -14,3 +14,8 @@
 
 ## Perceptron
 ![image](https://user-images.githubusercontent.com/48565238/153938188-89c173aa-b7b2-481a-a716-9f0e6accc50b.png)
+
+## Decision Trees
+![image](https://user-images.githubusercontent.com/48565238/153938559-3eb692c7-a229-41d2-bad9-0e1a433d53b0.png)
+
+## Titanic Decision Tree
