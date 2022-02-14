@@ -5,6 +5,7 @@
    - pd.get_dummies(df) #one-hot encodes the data, so it's all 1's and 0's
    - df.fillna(0.0) #fill the blanks
    - df['label'] = df.label.map({'ham':0, 'spam':1}) #encode names
+   - CountVectorizer() #convert complex data to numbers, see Naive Bayes
 - read
    - pd.read_csv(' ')
    - pd. smt with table
@@ -125,3 +126,6 @@ from sklearn.metrics import accuracy_score
 sklearn.metrics.accuracy_score(y_true, y_pred)
 ```
 recall, precission, etc.
+
+## Statistics
+http://mlwiki.org/index.php/Precision_and_Recall
