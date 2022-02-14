@@ -129,6 +129,7 @@ recall, precission, etc.
 
 ## Statistics
 http://mlwiki.org/index.php/Precision_and_Recall
+https://www.wikiwand.com/en/Precision_and_recall
 
 #### ROC Score and AUC
 ##### Code Example
