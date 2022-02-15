@@ -13,8 +13,7 @@
 ![image](https://user-images.githubusercontent.com/48565238/153937830-9bee2498-f697-4d70-a249-5e682e13c790.png)
 
 ## Perceptron
-![image](https://user-images.githubusercontent.com/48565238/153938188-89c173aa-b7b2-481a-a716-9f0e6accc50b.png)
-
+![image](https://user-images.githubusercontent.com/48565238/154100122-a87f2614-46d4-452e-b6c5-88644d945634.png)
 ## Decision Trees
 ![image](https://user-images.githubusercontent.com/48565238/153938559-3eb692c7-a229-41d2-bad9-0e1a433d53b0.png)
 
